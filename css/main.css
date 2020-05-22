@@ -6,6 +6,7 @@
 body {
     font-family: Arial,  sans-serif;
     font-size: 16px;
+    line-height: 1.5;
     color: #333333;
 }
 
@@ -40,7 +41,7 @@ body {
 }
 
 .color-light {
-    color: #fff;
+    color: #fff!important;
 }
 
 .color-dark {
@@ -53,26 +54,20 @@ body {
     border: 1px solid #bcb5b9;
 }
 
-.page-header {}
-
-.header-content {}
-
-.header-content h1 {
+.page-heading {
     font-size: 59px;
     font-weight: normal;
+    line-height: 1;
 }
 
 .header-list {
-    margin-top: 13px; /*не нашел в макете отсутп между заголовком и списком, вычислил исходя из высоты header*/
+    margin-top: 24px; /*не нашел в макете отсутп между заголовком и списком, вычислил исходя из высоты header*/
     list-style: none;
-}
-
-.header-text { /* разделил форматирование текста с форматированием блока*/
     font-size: 20px;
     line-height: 1.8;
 }
 
-.header-content li::before {
+.header-list li::before {
     content: "\2714"; /*https://www.toptal.com/designers/htmlarrows/symbols/heavy-check-mark/*/
     display: inline-block;
     width: 36px;
@@ -83,12 +78,69 @@ body {
     background-color: #fff; /* заглушка для картинки  */
 }
 
-.aboutProduct{}
+/* About Product */
 
-.aboutProduct-content {
-    width: 650px;
+.aboutProduct{
+    display: flex;
+    justify-content: space-between;    
 }
 
-.aboutProduct-img {
-    display: block; /*заглушка для картинки*/
+.aboutProduct-content {
+    width: 653px;
+}
+
+.section-heading {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.aboutProduct-content h2 {
+    text-align: left;
+}
+
+.aboutProduct-content p {
+    margin-top: 20px;
+}
+
+/* Dignity and pluses product */
+
+.dignity-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dignity-list li {
+    width: 567px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding-left: 40px;
+/*    position: relative;*/
+    list-style: none;
+    background:  url(../img/plus-list.png) no-repeat 0px 4px;
+}
+
+
+/*
+.dignity-list li::before {
+    content: "\229E";
+    display: inline-block;
+    width: 36px;
+    margin-right: 5px;
+    position: absolute;
+    left: 0px;
+    font-size: 32px;
+    font-weight: bold;
+}
+*/
+
+
+
+.copyright {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.3px;
+    text-align: center;
 }
