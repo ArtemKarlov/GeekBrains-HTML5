@@ -1,4 +1,4 @@
-* {
+body * {
     margin: 0;
     padding: 0;
 }
@@ -28,20 +28,20 @@ body {
     padding: 50px;
 }
 
-.bg-light {
+.bground-light {
     background-color: #fff;
 }
 
-.bg-gray {
+.bground-gray {
     background-color: #f5f5f5;
 }
 
-.bg-dark {
+.bground-dark {
     background-color: #445161;
 }
 
 .color-light {
-    color: #fff!important;
+    color: #fff;
 }
 
 .color-dark {
@@ -85,11 +85,11 @@ body {
     justify-content: space-between;    
 }
 
-.aboutProduct-content {
+.aboutProduct-text-wrapper {
     width: 653px;
 }
 
-.section-heading {
+.section-heading { /*будет использоваться для всех заголовков в секциях*/
     font-size: 30px;
     font-weight: normal;
     line-height: 1.2;
@@ -117,30 +117,23 @@ body {
     box-sizing: border-box;
     margin-top: 30px;
     padding-left: 40px;
-/*    position: relative;*/
     list-style: none;
     background:  url(../img/plus-list.png) no-repeat 0px 4px;
 }
 
 
-/*
-.dignity-list li::before {
-    content: "\229E";
-    display: inline-block;
-    width: 36px;
-    margin-right: 5px;
-    position: absolute;
-    left: 0px;
-    font-size: 32px;
-    font-weight: bold;
-}
-*/
 
 
+
+
+
+
+
+/*Footer*/
 
 .copyright {
     font-size: 12px;
-    line-height: 2;
+    line-height: 26px;;
     letter-spacing: 0.3px;
     text-align: center;
 }
