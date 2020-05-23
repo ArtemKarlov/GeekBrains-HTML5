@@ -96,11 +96,11 @@ body {
     text-align: center;
 }
 
-.aboutProduct-content h2 {
+.aboutProduct-text-wrapper h2 {
     text-align: left;
 }
 
-.aboutProduct-content p {
+.aboutProduct-text-wrapper p {
     margin-top: 20px;
 }
 
@@ -121,13 +121,22 @@ body {
     background:  url(../img/plus-list.png) no-repeat 0px 4px;
 }
 
+/*Screenshots*/
+
+.text-haeding {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.25;
+}
+
+.screenshots-wrapper figcaption {
+    width: 360px;
+}
 
 
-
-
-
-
-
+/*Reviews*/
+/*Buy it now*/
+/*Contacts*/
 
 /*Footer*/
 
