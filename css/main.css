@@ -135,8 +135,199 @@ body {
 
 
 /*Reviews*/
+
+.reviews-item {
+    width: 570px;
+}
+
+.reviews-item-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.reviews-item-text {
+    width: 476px;
+    padding: 16px 20px;
+    background-color: #ebebeb;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.29;
+    position: relative;
+    
+}
+
+.reviews-item-text span {
+    color: #989898;
+    font-style: normal;    
+}
+
+.reviews-item-text::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    border: 14px solid transparent;
+    border-right: 14px solid #ebebeb;
+    position: absolute;
+    left: -24px;
+    top: 24px;
+}
+
 /*Buy it now*/
+
+.buy-item-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.buy-item{
+    width: 300px;
+    margin-right: 45px; 
+    border: 2px solid #445162;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.buy-item > * {
+    padding: 20px;
+}
+
+.buy-item-price{
+    font-size: 40px;
+    line-height: 0.75;
+}
+
+.buy-item-list{
+    font-size: 14px;
+    line-height: 1.71;
+    list-style-position: inside;
+}
+
+.page-button {
+    height: 40px;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #445161;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 40px;    
+}
+
+.buy-item-button {
+    display: block; /* проверить display*/
+    width: 260px;
+    margin: 0 auto 20px;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+.page-button:hover {
+    color: #445161;
+    text-decoration: none;
+    background-color: #ccc;
+}
+
 /*Contacts*/
+
+.contacts-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-form input {
+    height: 40px;
+}
+
+.contacts-form input, 
+.contacts-form textarea {
+    margin-top: 21px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 14px 10px;
+}
+
+
+input.page-button{
+    width: 140px;
+    padding: 0;
+    line-height: 36px;
+}
+
+.contacts-links-wrapper {
+    width: 240px;
+    margin-left: 45px;
+}
+
+.contacts-links-wrapper ul {
+    list-style: none;
+}
+
+.contacts-links-wrapper a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contacts-messengers li {
+    margin-top: 18px;    
+}
+
+.contacts-messengers li a::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 26px;
+    height: 26px;
+    margin-right: 5px;
+    background-image: url(../img/msgrs_sprite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.messengers-item-icq a::before {
+    background-position: -26px 0;
+}
+
+.messengers-item-mail a::before {
+    background-position: -52px 0;
+}
+
+.messengers-item-phone a::before {
+    background-position: -78px 0;
+}
+
+.contacts-social li {
+    display: inline-block;
+    margin-top: 32px;
+    margin-left: 2px;
+}
+
+.contacts-social li a {
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #445161;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.contacts-links-wrapper a:hover {
+    color: #989898;
+}
+
 
 /*Footer*/
 
