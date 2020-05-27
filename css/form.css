@@ -30,6 +30,8 @@ fildset:nth-child(2n) {
     color: #8cc9b9;
 }
 
+/* тип */
+
 .area-type input {
     display: none;
 }
@@ -111,7 +113,8 @@ fildset:nth-child(2n) {
     line-height: 37px;
 }
 
-.input-wrapper input {
+.input-wrapper input,
+.input-wrapper div {
     flex-grow: 1;
 }
 
@@ -125,6 +128,28 @@ fildset:nth-child(2n) {
     border: none;
     border-bottom: 2px solid transparent;
     background-color: transparent;
+}
+
+.area-contacts input {
+    width: 100%;
+}
+
+.input-wrapper div::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 800px;
+}
+
+.tel-wrapper::after {
+    top: 63px;
+    background-image: url(../img/form-tel.png);
+}
+
+.email-wrapper::after {
+    top: 120px;
+    background-image: url(../img/form-email.png);
 }
 
 .area-name input:focus,
@@ -142,7 +167,7 @@ input[type="submit"] {
     height: 50px;
     margin: 20px 200px;
     line-height: 50px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #484848;
     text-transform: uppercase;
@@ -164,10 +189,5 @@ input[type="submit"]:focus,
 input[type="submit"]:hover {
     border: 4px solid #484848;
     line-height: 43px;
-}
-
-.test {
-    height: 10px;
-    border: 1px solid #000;
 }
 

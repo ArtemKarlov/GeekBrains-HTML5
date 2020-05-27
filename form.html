@@ -70,15 +70,18 @@
        <fildset class="area-contacts">            
            <div class="input-wrapper">
               <span class="legend">тел</span>
-               <input type="tel" name="tel" pattern="7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="7 ХХХ ХХХ ХХ ХХ">
+               <div class="tel-wrapper">
+                   <input type="tel" name="tel" pattern="7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="7 ХХХ ХХХ ХХ ХХ">
+               </div>
            </div>
            <div class="input-wrapper">
               <span class="legend">e-mail</span>
-               <input type="email" name="email" placeholder="Мы не будем спамить, честно!">
+               <div class="email-wrapper">
+                   <input type="email" name="email" placeholder="Мы не будем спамить, честно!">
+               </div>
            </div>
        </fildset>
        <input type="submit" value="send">
-       <div class="test"></div>
    </form>    
 </body>
 </html>
