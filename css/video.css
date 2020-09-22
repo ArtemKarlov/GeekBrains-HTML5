@@ -27,17 +27,19 @@ body {
 }
 
 .video-wrapper {
-    position: relative;
+/*    position: relative;*/
     z-index: 1;
-    padding-bottom: 56.25%;
+/*    padding-bottom: 56.25%;*/
 }
 
 .video {
     width: 100%;
     height: auto;
+/*
     position: absolute;
     top: 0;
     left: 0;
+*/
 }
 
 .intro-content {
@@ -74,7 +76,8 @@ body {
 }
 
 
-.menu li a:hover {
+.menu li a:hover,
+.menu li a:focus {
     color: rgba(255, 255, 255, 1);
 }
 
